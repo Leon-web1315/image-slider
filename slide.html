@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>slide</title>
+    <link rel="stylesheet" href="slide.css">
+</head>
+<body>
+    <h1>Image Slider</h1>
+    
+    <p class="desc">
+        ボタン・サムネイル・キーボード操作に対応したスライドショーです。
+    </p>
+    <h2 id="title"></h2>
+
+    <div id="app">
+        <img id="slide" src="images/img1.jpg">
+
+        <div id="thumbnails">
+            <img src="images/img1.jpg" class="thumb">
+            <img src="images/img2.jpg" class="thumb">
+            <img src="images/img3.jpg" class="thumb">
+            <img src="images/img4.jpg" class="thumb">
+            <img src="images/img5.jpg" class="thumb">
+        </div>
+
+        <div id="btnGroup"  class="btn-group">
+            <button id="prevBtn">前</button>
+            <button id="stopBtn">停止</button>
+            <button id="startBtn">再開</button>
+            <button id="nextBtn">次</button>
+        </div>
+    </div>
+
+    <script src="logic.js"></script>
+    <script src="events.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
